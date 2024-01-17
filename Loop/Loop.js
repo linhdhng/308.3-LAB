@@ -56,3 +56,14 @@ for (let n = 32; n >= 2; n++) {
 // You can make the following assumptions:
 // There will only be 4 cells per row.
 // There will be no escaped characters other than “\n”
+
+const str = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+
+for (const c of str) {
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == "\n") {
+            continue;
+        }
+    }
+	console.log(c);
+}
